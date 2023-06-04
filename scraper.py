@@ -37,7 +37,7 @@ selectors = {
 
 #START
 # product_code = input("Podaj kod produktu")
-product_code = "114406246"
+product_code = "39562616"
 url = f"https://www.ceneo.pl/{product_code}#tab=reviews"
 opinions_all = []
 
@@ -63,4 +63,3 @@ if not os.path.exists("./opinions/"):
 with open(f"./opinions/{product_code}.json", "w", encoding="utf-8") as jf:
     json.dump(opinions_all,jf, indent=4, ensure_ascii=False)
 
-#pamiętaj pip freeze > requirements po zainstalowaniu pandas i matblotlib
